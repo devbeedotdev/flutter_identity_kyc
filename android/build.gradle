@@ -4,8 +4,9 @@ version '1.0-SNAPSHOT'
 buildscript {
     ext {
         // Define default versions
-        gradle_version = '4.2.2'
-        kotlin_version = '1.9.0'
+        // gradle_version = '4.2.2'
+        gradle_version = '8.6.1'
+        kotlin_version = '1.9.22'
     }
     repositories {
         google()
@@ -30,7 +31,7 @@ apply plugin: 'kotlin-android'
 
 android {
     // compileSdkVersion rootProject.ext.compileSdkVersion  // Use the parent project's compileSdkVersion
-    compileSdkVersion 34
+    compileSdkVersion 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
